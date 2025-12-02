@@ -20,12 +20,12 @@ class QuestionsScreen extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(30),
         child: Column(
-          mainAxisSize: MainAxisSize.min, // Make Column only as tall as its content
-          crossAxisAlignment: CrossAxisAlignment.center, // Center horizontally
+          mainAxisSize: MainAxisSize.min, 
+          crossAxisAlignment: CrossAxisAlignment.center, 
           children: [
             Text(
               question.text,
-              textAlign: TextAlign.center, // Center text inside
+              textAlign: TextAlign.center, 
               style: const TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
