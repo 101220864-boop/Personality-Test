@@ -32,5 +32,5 @@ final questions = [
       Personality.Adventurer,
     ],
   ),
-  // Add more questions if needed
+
 ];
