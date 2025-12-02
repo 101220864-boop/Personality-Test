@@ -17,14 +17,14 @@ class ResultScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final emojis = personalityEmojis[result] ?? '';
 
-    // Split emojis into a list of characters for display
+  
     final emojiList = emojis.characters.toList();
 
     return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // Display emojis in a row
+         
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: emojiList
@@ -36,7 +36,7 @@ class ResultScreen extends StatelessWidget {
           ),
           const SizedBox(height: 20),
 
-          // Personality description
+        
           Text(
             personalityMessages[result] ?? 'Unknown personality',
             textAlign: TextAlign.center,
@@ -44,7 +44,7 @@ class ResultScreen extends StatelessWidget {
           ),
           const SizedBox(height: 20),
 
-          // Restart button
+         
           ElevatedButton(
             onPressed: () => Navigator.pop(context),
             child: const Text('Restart Quiz'),
