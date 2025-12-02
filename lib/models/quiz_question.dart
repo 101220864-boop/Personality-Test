@@ -7,7 +7,6 @@ class QuizQuestion {
   final List<String> answers;
   final List<Personality> answerPersonalities;
 
-  // Returns list of maps {answer, personality} shuffled
   List<Map<String, Object>> getShuffledAnswersWithPersonality() {
     final combined = List.generate(
       answers.length,
