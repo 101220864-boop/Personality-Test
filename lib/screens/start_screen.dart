@@ -10,15 +10,15 @@ class StartScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // Text appears first
+          
           const Text(
-            "Start your personality test!",
+            "Discover your personality test!",
             style: TextStyle(fontSize: 24, color: Colors.white),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
 
-          // Emojis in rows, 2 per row
+        
           Column(
             children: const [
               Row(
@@ -42,7 +42,7 @@ class StartScreen extends StatelessWidget {
           ),
           const SizedBox(height: 30),
 
-          // Start quiz button
+         
           ElevatedButton(
             onPressed: startQuiz,
             child: const Text('Start Quiz'),
